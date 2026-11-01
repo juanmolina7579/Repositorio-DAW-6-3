@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Curriculum Vitae de Juan Diego Molina Villacís - Estudiante de Ingeniería de Software"
+    />
+    <title>CV - Juan Diego Molina Villacís</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Segoe UI", Tahoma, sans-serif;
+        background: #e8ecf1;
+        color: #333;
+        line-height: 1.6;
+        padding: 20px;
+      }
+      .cv {
+        max-width: 900px;
+        margin: 0 auto;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        overflow: hidden;
+      }
+
+      /* HEADER */
+      header {
+        background: #1f3a5f;
+        color: #fff;
+        padding: 35px 40px;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        flex-wrap: wrap;
+      }
+      header figure {
+        margin: 0;
+      }
+      header img {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid #4a90d9;
+        display: block;
+      }
+      header h1 {
+        font-size: 28px;
+        margin-bottom: 6px;
+      }
+      header .subtitulo {
+        color: #9dc3ec;
+        font-size: 15px;
+      }
+
+      /* NAV */
+      nav {
+        background: #16304f;
+        padding: 12px 40px;
+      }
+      nav ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+      nav a {
+        color: #dfe6ee;
+        text-decoration: none;
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+      nav a:hover {
+        color: #4a90d9;
+      }
+
+      /* MAIN */
+      main {
+        padding: 35px 40px;
+      }
+      section {
+        margin-bottom: 35px;
+      }
+      section h2 {
+        font-size: 18px;
+        color: #1f3a5f;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        border-left: 4px solid #4a90d9;
+        padding-left: 12px;
+        margin-bottom: 15px;
+      }
+      section p {
+        font-size: 14px;
+        margin-bottom: 10px;
+        text-align: justify;
+      }
+
+      article {
+        margin-bottom: 18px;
+      }
+      article:last-child {
+        margin-bottom: 0;
+      }
+      article h3 {
+        font-size: 15px;
+        color: #1f3a5f;
+        margin-bottom: 3px;
+      }
+      .fecha {
+        font-size: 12px;
+        color: #4a90d9;
+        font-weight: 600;
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      ul.lista {
+        list-style: none;
+        padding-left: 0;
+      }
+      ul.lista li {
+        font-size: 14px;
+        padding-left: 20px;
+        position: relative;
+        margin-bottom: 6px;
+      }
+      ul.lista li::before {
+        content: "▸";
+        color: #4a90d9;
+        position: absolute;
+        left: 0;
+        font-weight: bold;
+      }
+
+      a {
+        color: #1f3a5f;
+      }
+      a:hover {
+        color: #4a90d9;
+      }
+
+      /* FOOTER */
+      footer {
+        background: #1f3a5f;
+        color: #dfe6ee;
+        text-align: center;
+        padding: 20px;
+        font-size: 13px;
+      }
+      footer a {
+        color: #9dc3ec;
+      }
+
+      @media (max-width: 600px) {
+        header {
+          flex-direction: column;
+          text-align: center;
+        }
+        main,
+        nav,
+        header {
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cv">
+      <!-- ================= 1. INFORMACIÓN PERSONAL ================= -->
+      <header id="inicio">
+        <figure>
+          <img src="foto.jpg" alt="Fotografía de Juan Diego Molina Villacís" />
+        </figure>
+        <div>
+          <h1>Juan Diego Molina Villacís</h1>
+          <p class="subtitulo">Estudiante de Ingeniería de Software</p>
+          <p class="subtitulo">
+            Universidad de Guayaquil, Facultad de Ciencias Matemáticas y Física
+          </p>
+        </div>
+      </header>
+
+      <!-- ================= NAVEGACIÓN ================= -->
+      <nav>
+        <ul>
+          <li><a href="#perfil">Perfil</a></li>
+          <li><a href="#formacion">Formación</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#experiencia">Experiencia</a></li>
+          <li><a href="#cursos">Cursos</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <main>
+        <!-- ================= BREVE PRESENTACIÓN ================= -->
+        <section>
+          <h2>Presentación</h2>
+          <p>
+            Soy <strong>Juan Diego Molina Villacís</strong>, estudiante de
+            Ingeniería de Software en la Universidad de Guayaquil. Me oriento al
+            desarrollo de aplicaciones web y a la programación orientada a la
+            resolución de requerimientos prácticos, con interés en seguir
+            incorporando herramientas y estándares del sector técnico.
+          </p>
+        </section>
+
+        <!-- ================= 2. PERFIL PROFESIONAL ================= -->
+        <section id="perfil">
+          <h2>Perfil Profesional</h2>
+          <p>
+            Formación enfocada en desarrollo frontend y backend, diseño de
+            interfaces y manejo de bases de datos relacionales. Interés en
+            adquirir experiencia mediante el desarrollo de proyectos web y
+            aplicaciones que resuelvan problemas operativos concretos.
+          </p>
+          <h3 style="font-size: 14px; color: #1f3a5f; margin: 12px 0 6px">
+            Áreas de enfoque y objetivos
+          </h3>
+          <ul class="lista">
+            <li>
+              Completar la formación de pregrado en Ingeniería de Software.
+            </li>
+            <li>
+              Profundizar en tecnologías web para desarrollo full stack.
+            </li>
+            <li>
+              Implementar arquitecturas limpias y persistencia en bases de datos.
+            </li>
+            <li>
+              Participar en proyectos de desarrollo con equipos de trabajo.
+            </li>
+          </ul>
+        </section>
+
+        <!-- ================= 3. FORMACIÓN ACADÉMICA ================= -->
+        <section id="formacion">
+          <h2>Formación Académica</h2>
+
+          <article>
+            <h3>Ingeniería de Software</h3>
+            <span class="fecha">2023 - Presente</span>
+            <p>
+              Universidad de Guayaquil, Facultad de Ciencias Matemáticas y
+              Física.
+            </p>
+          </article>
+
+          <article>
+            <h3>Bachillerato</h3>
+            <span class="fecha">2017 - 2021</span>
+            <p>Unidad Educativa Cenest Harvard, Guayaquil, Ecuador.</p>
+          </article>
+        </section>
+
+        <!-- ================= 4. HABILIDADES Y COMPETENCIAS ================= -->
+        <section id="habilidades">
+          <h2>Habilidades y Competencias</h2>
+
+          <h3 style="font-size: 14px; color: #1f3a5f; margin-bottom: 6px">
+            Conocimientos técnicos
+          </h3>
+          <ul class="lista">
+            <li>HTML5 y CSS3</li>
+            <li>JavaScript</li>
+            <li>Programación con Java y Python</li>
+            <li>Bases de datos SQL (MySQL)</li>
+            <li>Control de versiones con Git y GitHub</li>
+          </ul>
+
+          <h3 style="font-size: 14px; color: #1f3a5f; margin: 12px 0 6px">
+            Entornos y herramientas
+          </h3>
+          <ul class="lista">
+            <li>Visual Studio Code</li>
+            <li>Herramientas ofimáticas y documentación técnica</li>
+            <li>Google Workspace</li>
+          </ul>
+
+          <h3 style="font-size: 14px; color: #1f3a5f; margin: 12px 0 6px">
+            Competencias de trabajo
+          </h3>
+          <ul class="lista">
+            <li>Trabajo colaborativo y coordinación en equipo</li>
+            <li>Documentación estructurada de requerimientos</li>
+            <li>Análisis lógico orientado a problemas de software</li>
+            <li>Adaptación a nuevos lenguajes y entornos de desarrollo</li>
+          </ul>
+        </section>
+
+        <!-- ================= 5. EXPERIENCIA ACADÉMICA ================= -->
+        <section id="experiencia">
+          <h2>Experiencia Académica</h2>
+
+          <article>
+            <h3>Proyecto integrador de programación</h3>
+            <span class="fecha">2024</span>
+            <p>
+              Diseño e implementación de una aplicación de consola en Java para la
+              materia de Programación, cubriendo lógica modular, validaciones y
+              persistencia con lectura y escritura de archivos.
+            </p>
+          </article>
+
+          <article>
+            <h3>Actividades académicas y talleres universitarios</h3>
+            <span class="fecha">2024</span>
+            <p>
+              Asistencia y participación en jornadas y talleres técnicos de la
+              Facultad de Ciencias Matemáticas y Física.
+            </p>
+          </article>
+        </section>
+
+        <!-- ================= 6. CURSOS Y CERTIFICACIONES ================= -->
+        <section id="cursos">
+          <h2>Cursos y Certificaciones</h2>
+
+          <article>
+            <h3>Desarrollo Web (HTML, CSS y JavaScript)</h3>
+            <span class="fecha">2024</span>
+            <p>Formación en línea con acreditación de finalización.</p>
+          </article>
+
+          <article>
+            <h3>Fundamentos de Programación</h3>
+            <span class="fecha">2024</span>
+            <p>Curso complementario enfocado en estructuras de control y lógica algorítmica.</p>
+          </article>
+        </section>
+
+        <!-- ================= 7. PORTAFOLIO DE PROYECTOS ================= -->
+        <section id="proyectos">
+          <h2>Portafolio de Proyectos</h2>
+
+          <article>
+            <h3>Hoja de Vida Web</h3>
+            <span class="fecha">2026</span>
+            <p>
+              Sitio web estructurado con HTML5 semántico y maquetación en CSS3,
+              desplegado a través de GitHub Pages.
+            </p>
+          </article>
+
+          <article>
+            <h3>Sistema de Registro de Estudiantes</h3>
+            <span class="fecha">2025</span>
+            <p>
+              Aplicación de escritorio en Java conectada a una base de datos MySQL
+              para operaciones CRUD básicas de alumnos.
+            </p>
+          </article>
+
+          <article>
+            <h3>Calculadora Web</h3>
+            <span class="fecha">2024</span>
+            <p>
+              Interfaz interactiva desarrollada con HTML, CSS y manipulación del
+              DOM en JavaScript para operaciones aritméticas estándar.
+            </p>
+          </article>
+        </section>
+
+        <!-- ================= 8. INFORMACIÓN DE CONTACTO ================= -->
+        <section id="contacto">
+          <h2>Información de Contacto</h2>
+          <ul class="lista">
+            <li>
+              📧 Correo:
+              <a href="mailto:jmolina03@outlook.es">jmolina03@outlook.es</a>
+            </li>
+            <li>
+              🔗 GitHub:
+              <a
+                href="https://github.com/juanmolina7579"
+                target="_blank"
+                rel="noopener"
+                >github.com/juanmolina7579</a
+              >
+            </li>
+          </ul>
+        </section>
+      </main>
+
+      <footer>
+        <p>
+          © 2026 Juan Diego Molina Villacís - Hoja de Vida desarrollada con
+          HTML5 y CSS3
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
